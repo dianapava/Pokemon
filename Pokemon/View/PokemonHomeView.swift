@@ -18,7 +18,7 @@ struct PokemonHomeView: View {
                     .font(.system(size: 30))
                     .bold()
                     .foregroundColor(.blue)
-                    .safeAreaPadding(20)
+                    .safeAreaPadding()
                 List(viewModel.pokemonList, id: \.name) { pokemon in
                     NavigationLink {
                         PokemonDetailView(pokemon: pokemon)
@@ -31,7 +31,9 @@ struct PokemonHomeView: View {
                 })
             }
             
-        } .background(Color.black)
+        } 
+        .background(Color.black)
+        .ignoresSafeArea(.all)
     }
 }
 

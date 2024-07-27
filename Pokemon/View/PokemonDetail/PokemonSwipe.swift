@@ -9,7 +9,27 @@ import SwiftUI
 
 struct PokemonSwipe: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Image(systemName: "chevron.up")
+                .font(.system(size: 22, weight: .bold))
+            Image(systemName: "chevron.up")
+                .font(.system(size: 22, weight: .bold))
+                .opacity(0.5)
+            Image(systemName: "chevron.up")
+                .font(.system(size: 22, weight: .bold))
+                .opacity(0.2)
+            Image(uiImage: .pokebola)
+                .resizable()
+                .frame(width: 60, height: 60)
+                .shadow(radius: 20)
+            Spacer()
+        }
+        .padding(10)
+        .background(Color.white.opacity(0.8))
+        .frame(width: 70, height: 140)
+        .cornerRadius(70)
+        .shadow(radius: 8)
     }
 }
 

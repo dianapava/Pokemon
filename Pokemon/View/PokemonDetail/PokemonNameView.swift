@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct PokemonNameView: View {
+    let name: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Text(name)
+                .font(.system(size: 80, weight: .bold))
+                .foregroundColor(.white.opacity(0.06))
+                .frame(width: .infinity, height: 50)
+            Text(name)
+                .foregroundColor(.white)
+                .font(.system(size: 40, weight: .bold))
+        }
+    
     }
 }
 
-#Preview {
-    PokemonNameView()
-}

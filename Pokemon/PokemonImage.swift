@@ -10,6 +10,7 @@ import UIKit
 enum PokemonImageType : String {
     case charizard
     case fire
+    case pokebola
 }
 
 extension UIImage {

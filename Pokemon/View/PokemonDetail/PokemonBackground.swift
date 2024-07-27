@@ -9,7 +9,16 @@ import SwiftUI
 
 struct PokemonBackground: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Circle()
+            .fill(
+                RadialGradient(colors: 
+                                [Color.yellow.opacity(0.3),
+                                 Color.yellow.opacity(0.2),
+                                 Color.black.opacity(0.1)],
+                               center: .center,
+                               startRadius: 0,
+                               endRadius: 180)
+            )
     }
 }
 
