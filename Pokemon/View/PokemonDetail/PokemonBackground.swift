@@ -12,8 +12,8 @@ struct PokemonBackground: View {
         Circle()
             .fill(
                 RadialGradient(colors: 
-                                [Color.yellow.opacity(0.3),
-                                 Color.yellow.opacity(0.2),
+                                [Color.orange.opacity(0.3),
+                                 Color.orange.opacity(0.2),
                                  Color.black.opacity(0.1)],
                                center: .center,
                                startRadius: 0,
@@ -21,6 +21,22 @@ struct PokemonBackground: View {
             )
     }
 }
+
+struct PokemonBackgroundBlue: View {
+    var body: some View {
+        Circle()
+            .fill(
+                RadialGradient(colors:
+                                [Color.white.opacity(0.3),
+                                 Color.blue.opacity(0.2),
+                                 Color.black.opacity(0.1)],
+                               center: .center,
+                               startRadius: 0,
+                               endRadius: 180)
+            )
+    }
+}
+
 
 #Preview {
     PokemonBackground()

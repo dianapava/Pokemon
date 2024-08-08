@@ -52,7 +52,7 @@ struct PokemonDetailView: View {
                             Text("swipe uo to select")
                                 .font(.system(size: 15, weight: .bold))
                                 .foregroundColor(.white.opacity(0.5))
-                              
+
                         }
                     }
                     

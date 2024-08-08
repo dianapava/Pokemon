@@ -12,14 +12,6 @@ struct PokemonCell: View {
     
     var body: some View {
         ZStack {
-//            HStack {
-//                Color.white
-//                    .frame(width: 8)
-//                Color.gray
-//                    .cornerRadius(10)
-//                Color.white
-//                    .frame(width: 8)
-//            }
             HStack {
                 Text(name)
                     .font(.system(size: 22))
